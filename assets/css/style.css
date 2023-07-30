@@ -1,0 +1,230 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  .contenedor{
+    display: grid;
+    grid-template-rows: 10vh 13vh 70vh 7vh;
+    grid-template-areas:
+      "nav"
+      "busqueda"
+      "card"
+      "footer";
+    height: 100vh;
+  }
+  
+  nav {
+    padding: 10px;
+    grid-area: nav;
+    background-color: #012855;
+    color: #fff;
+    font-size: 25px;
+    
+  }
+  
+  .cabezera {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+       
+  }
+  .contenedormenu {
+    display: none;
+  }
+
+  
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  
+
+  .menu {
+    grid-area: busqueda;
+    background-color: #b6b2b2;
+    color: black;
+  }
+
+  .contenedorbusqueda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+  }
+
+
+  .filtro {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    padding-left: 1em;
+    padding: 5px;
+  }
+  
+  .cuerpo {
+    grid-area: card;
+    background-color: #fff;
+    position: relative;
+    overflow-y: auto;
+  }
+  
+
+  .contenedortarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px 25px;
+    padding: 30px 60px;
+  }
+  
+  .tarjeta {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    flex-basis: 90%;
+    flex-grow: 5em;
+    align-items: center;
+    border-radius: 4px grey;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 10px;
+  }
+  
+  .img {
+    padding: 30px 30px 0px 30px;
+  }
+
+
+
+  .footcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: black;
+  }
+  
+   
+  .btn {
+    background-color: #004490;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px 10px;
+  }
+  
+  .btn:hover {
+    background-color: #2a0433c8;
+  }
+  
+
+  .numerador {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    text-align: center;
+    position:sticky;
+    bottom: 0;
+    color: rgb(43, 1, 1);
+    padding: 30px;
+  }
+  
+  .items{
+    border: 1px solid #ddd;
+    float: left;
+    padding: 15px 15px;
+    color: rgb(0, 0, 0);
+  }
+
+
+
+
+  .footer {
+    grid-area: footer;
+    background-color: #00215c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .icon{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    font-size: 1.5em;
+  }
+  
+ 
+  
+  @media (min-width: 992px) {
+    .contenedor {
+      grid-template-areas:
+        "nav busqueda"
+        "nav card"
+        "footer card"; 
+        grid-template-rows: 1fr 10fr;
+        grid-template-columns: 1.5fr 8fr;
+    }
+  
+    .cabezera {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+      .barra {
+        display: none;
+      }
+    }
+
+
+    .contenedortarjeta {
+      display: flex;
+      flex-direction: row;
+      
+    }
+
+    .tarjeta {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 20%;
+        flex-grow: 12;
+        align-items: center;
+        border-radius: 8px grey;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+      }
+
+      .img {
+        padding: 3px 3px;
+      }
+   
+      .footer {
+      gap: 15px;
+      padding: 15px;
+    }
+  
+    .icons {
+      font-size: 1.5em;
+    }
+  
+    .contenedormenu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      padding: 20px;
+    }
+  
