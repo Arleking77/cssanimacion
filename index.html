@@ -9,40 +9,51 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"  />
     <script  src="https://kit.fontawesome.com/92a36300ab.js"  crossorigin="anonymous"></script>
-  </head>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+   </head>
   
   
   
   <body>
     <div class="contenedor">
-      <nav>
-        <div class="cabezera">
-          <div class="title">
-            <i class="fa-solid fa-car" style="color: #edeff3;"></i>
-            <h1>Electric Cars</h1>
-          </div>
-          <div Class="barra">
-            <i class="fa-solid fa-bars"></i>
-          </div>
+      <div class="menu">
+        <div class= "titlemenu">
+          <i class="fa-solid fa-book fa-2x" style="color: #fbfcfe;"></i>
+          <h1>La Comiqueria</h1>
         </div>
 
-        <div class="contenedormenu">
-          <p>Inicio</p>
-          <p >Catalogo</p>
-          <p >Ofertas</p>
-          <p >Contactos</p>
-        </div>
-      </nav>
 
-      <div class="menu" >
+        <div class="menu__burger">
+            <input type="checkbox">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+            <nav>
+                <ul>
+                    <li>Inicio</li>
+                    <li>Catálogo</li>
+                    <li>Ofertas</li>
+                    <li>Contacto</li>
+                </ul>
+              </nav>
+        </div>
+        <nav>
+            <ul class="menu__opciones">
+                <li>Inicio</li>
+                <li>Catálogo</li>
+                <li>Ofertas</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+    </div>
+
+      <div class="menul" >
         <div class="contenedorbusqueda">
           <label for="cars-select"><strong>Ordenar Por:</strong></label>
           <select class="filtro">
             <option value="precio">Precio</option>
-            <option value="Modelo">Modelo</option>
-            <option value="Año">Año</option>
-            <option value="Color">Color</option>
-          </select>
+            <option value="Modelo">Genero</option>
+            <option value="Año">Estilo</option>
+            </select>
         </div>
     </div>
 
@@ -50,83 +61,91 @@
         <div class="contenedortarjeta">
             <div class="tarjeta">
                 <div class="img">
-                  <img src="./assets/jpg/auto.jpg" alt="Model: City Car" width="100%"/>
+                  <img src="./assets/jpg/bt.jpg" alt="Model: City Car" width="100%"/>
                 </div>
                 <div class="footcard">
-                  <p>Modelo: City Car</p>
+                  <p>Comic: Batman</p>
+                  <p>$3.000</p>
                   <button class="btn">Ver mas</button>
                 </div>
               </div>
 
           <div class="tarjeta">
             <div class="img">
-              <img src="./assets/jpg/auto.jpg" alt="Model: City Car" width="100%"/>
+              <img src="./assets/jpg/re.png" alt="Model: City Car" width="100%"/>
             </div>
             <div class="footcard">
-              <p>Modelo: City Car</p>
+              <p>Comic: DC</p>
+              <p>$4.000</p>
               <button class="btn">Ver mas</button>
             </div>
           </div>
 
           <div class="tarjeta">
             <div class="img">
-              <img src="./assets/jpg/auto.jpg" alt="Model: City Car" width="100%"/>
+              <img src="./assets/jpg/dfa175ecca9c4178b29626c4e0c9ed71.jpg" alt="Model: City Car" width="100%"/>
             </div>
             <div class="footcard">
-              <p>Modelo: City Car</p>
+              <p>Comic: El aventurero</p>
+              <p>$5.000</p>
               <button class="btn">Ver mas</button>
             </div>
           </div>
 
           <div class="tarjeta">
             <div class="img">
-              <img src="./assets/jpg/auto.jpg" alt="Model: City Car" width="100%"/>
+              <img src="./assets/jpg/unk.jpg" alt="Model: City Car" width="100%"/>
             </div>
             <div class="footcard">
-              <p>Modelo: City Car</p>
+              <p>Comic: La cosa</p>
+              <p>$8.000</p>
               <button class="btn">Ver mas</button>
             </div>
           </div>
 
           <div class="tarjeta">
             <div class="img">
-              <img src="./assets/jpg/auto.jpg" alt="Model: City Car" width="100%"/>
+              <img src="./assets/jpg/bt.jpg" alt="Model: City Car" width="100%"/>
             </div>
             <div class="footcard">
-              <p>Modelo: City Car</p>
+              <p>Comic: Batman</p>
+              <p>$3.000</p>
               <button class="btn">Ver mas</button>
             </div>
           </div>
 
-          <div class="tarjeta">
-            <div class="img">
-              <img src="./assets/jpg/auto.jpg" alt="Model: City Car" width="100%"/>
-            </div>
-            <div class="footcard">
-              <p>Modelo: City Car</p>
-              <button class="btn">Ver mas</button>
-            </div>
-          </div>
+      <div class="tarjeta">
+        <div class="img">
+          <img src="./assets/jpg/images.jpg" alt="Model: City Car" width="100%"/>
+        </div>
+        <div class="footcard">
+          <p>Comic: DC</p>
+          <p>$4.000</p>
+          <button class="btn">Ver mas</button>
+        </div>
+      </div>
 
-          <div class="tarjeta">
-            <div class="img">
-              <img src="./assets/jpg/auto.jpg" alt="Model: City Car" width="100%"/>
-            </div>
-            <div class="footcard">
-              <p>Modelo: City Car</p>
-              <button class="btn">Ver mas</button>
-            </div>
-          </div>
+      <div class="tarjeta">
+        <div class="img">
+          <img src="./assets/jpg/re.png" alt="Model: City Car" width="100%"/>
+        </div>
+        <div class="footcard">
+          <p>Comic: El aventurero</p>
+          <p>$5.000</p>
+          <button class="btn">Ver mas</button>
+        </div>
+      </div>
 
-          <div class="tarjeta">
-            <div class="img">
-              <img src="./assets/jpg/auto.jpg" alt="Model: City Car" width="100%"/>
-            </div>
-            <div class="footcard">
-              <p>Modelo: City Car</p>
-              <button class="btn">Ver mas</button>
-            </div>
-          </div>
+      <div class="tarjeta">
+        <div class="img">
+          <img src="./assets/jpg/unk.jpg" alt="Model: City Car" width="100%"/>
+        </div>
+        <div class="footcard">
+          <p>Comic: La cosa</p>
+          <p>$8.000</p>
+          <button class="btn">Ver mas</button>
+        </div>
+      </div>
         </div>
         <div class="numerador">
           <p class="items"><<</p>
